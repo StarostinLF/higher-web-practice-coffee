@@ -1,0 +1,31 @@
+.button {
+	background: var(--cobalt-color);
+	color: var(--surface-color);
+	border-radius: 12px;
+	padding: 14px 16px;
+	transition: background 0.3s ease;
+}
+
+.button:hover {
+	background: color-mix(in srgb, var(--cobalt-color) 80%, transparent);
+}
+
+.button_type_secondary {
+	background: var(--surface-background);
+	color: var(--cobalt-color);
+	border: 1px solid var(--cobalt-color);
+}
+
+.button_type_secondary:hover {
+	background: color-mix(in srgb, var(--cobalt-color) 10%, transparent);
+}
+
+.button_size_large {
+	padding: 16px 20px;
+}
+
+@media (min-width: 328px) and (max-width: 1139px) {
+	.button_size_large {
+		padding: 14px 16px;
+	}
+}

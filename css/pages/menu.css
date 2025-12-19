@@ -1,0 +1,15 @@
+@import '../reset.css';
+@import '../variables.css';
+@import '../globals.css';
+
+@import '../components/header.css';
+@import '../components/footer.css';
+@import '../components/anchor.css';
+@import '../components/card.css';
+@import '../components/pattern.css';
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+}

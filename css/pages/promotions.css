@@ -1,0 +1,97 @@
+@import '../reset.css';
+@import '../variables.css';
+@import '../globals.css';
+
+@import '../components/header.css';
+@import '../components/footer.css';
+@import '../components/carousel.css';
+@import '../components/pattern.css';
+
+.main {
+	justify-content: center;
+}
+
+.card,
+.card__description-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.card {
+	gap: 2px;
+}
+
+.card__image-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 300px;
+	border-radius: 8px;
+}
+
+.card__image {
+	max-width: 650px;
+	width: 100%;
+	height: inherit;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center;
+	object-position: center;
+}
+
+.card__image_top {
+	-o-object-position: top;
+	object-position: top;
+}
+
+.card__image_center {
+	-o-object-position: center;
+	object-position: center;
+}
+
+.card__image_bottom {
+	-o-object-position: 50% calc(100% + 50px);
+	object-position: 50% calc(100% + 50px);
+}
+
+.card__description-container {
+	gap: 12px;
+	text-align: center;
+	padding: 12px 16px 28px;
+	outline: 1px solid color-mix(in srgb, var(--paper-color) 85%, black 15%);
+}
+
+.card__indicator-list {
+	display: flex;
+	gap: 8px;
+	align-self: center;
+}
+
+.card__indicator-item {
+	width: 40px;
+	height: 8px;
+	background: color-mix(in srgb, var(--cobalt-color) 10%, transparent);
+}
+
+.card__indicator-item.active {
+	background: var(--cobalt-color);
+}
+
+@media (min-width: 328px) and (max-width: 703px) {
+	.card__image-container {
+		height: 120px;
+	}
+
+	.card__image {
+		max-width: 250px;
+	}
+
+	.card__image_bottom {
+		-o-object-position: 50% calc(100% + 20px);
+		object-position: 50% calc(100% + 20px);
+	}
+
+	.card__title {
+		text-align: start;
+	}
+}

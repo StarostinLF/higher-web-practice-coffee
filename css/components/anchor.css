@@ -1,0 +1,24 @@
+.anchor__navigation {
+	display: flex;
+	flex-wrap: wrap;
+	-moz-column-gap: 32px;
+	column-gap: 32px;
+	border-bottom: 1px solid color-mix(in srgb, var(--paper-color) 85%, black 15%);
+}
+
+.anchor {
+	font-family: var(--tech-label-font);
+	transition: color 0.3s ease;
+	padding: 20px 0;
+}
+
+.anchor:hover {
+	text-decoration: underline;
+	color: var(--cobalt-color);
+}
+
+@media (min-width: 328px) and (max-width: 703px) {
+	.anchor {
+		padding: 10px 0;
+	}
+}

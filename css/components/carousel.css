@@ -1,0 +1,29 @@
+.promotions__carousel {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.promotions__button {
+	height: 100%;
+}
+
+.promotions__list {
+	max-height: 442px;
+	height: 100%;
+	flex: 1 1 auto;
+	border: 1px solid var(--cobalt-color);
+	overflow: hidden;
+}
+
+.next {
+	transform: rotate(180deg);
+}
+
+@media (min-width: 328px) and (max-width: 703px) {
+	.prev,
+	.next {
+		display: none;
+	}
+}

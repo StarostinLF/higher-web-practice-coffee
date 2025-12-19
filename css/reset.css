@@ -1,0 +1,61 @@
+/* Cброс CSS */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	line-height: 1;
+	font-family: inherit;
+	background: none;
+	color: inherit;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+	cursor: pointer;
+	font: inherit;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+address {
+	font-style: normal;
+}

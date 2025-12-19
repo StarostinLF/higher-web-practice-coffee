@@ -1,0 +1,37 @@
+.faq__item {
+	outline: 1.5px solid var(--cobalt-color);
+}
+
+.faq__question {
+	padding: 16px;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.faq__icon {
+	transform: rotate(-90deg);
+	transition: transform 0.3s ease;
+}
+
+.faq__icon_rotated {
+	transform: rotate(90deg);
+}
+
+.faq__answer {
+	font-size: 14px;
+	padding: 0 16px;
+	max-height: 0;
+	height: 100%;
+	transition: max-height 0.3s ease, visibility 0.3s ease, padding 0.3s ease,
+		margin-top 0.3s ease;
+	overflow: hidden;
+	outline: 1px solid color-mix(in srgb, var(--paper-color) 85%, black 15%);
+}
+
+.faq__answer_visibled {
+	margin-top: 1px;
+	padding: 16px;
+	max-height: 500px;
+	visibility: visible;
+}

@@ -1,0 +1,29 @@
+.footer__navigation {
+	display: flex;
+	padding: 64px 0;
+	color: var(--surface-color);
+	background-color: var(--cobalt-color);
+}
+
+.footer__navigation-link {
+	width: calc(100% / 3);
+	text-align: center;
+}
+
+@media (min-width: 328px) and (max-width: 703px) {
+	.footer__navigation {
+		padding: 32px 0;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.footer__navigation-link {
+		width: 100%;
+	}
+}
+
+@media (min-width: 704px) and (max-width: 1139px) {
+	.footer__navigation {
+		padding: 48px 0;
+	}
+}

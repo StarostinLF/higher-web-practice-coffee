@@ -1,5 +1,3 @@
-@import '../reset.css';
-@import '../variables.css';
 @import '../globals.css';
 
 @import '../components/header.css';
@@ -73,7 +71,7 @@
 	background: color-mix(in srgb, var(--cobalt-color) 10%, transparent);
 }
 
-.card__indicator-item.active {
+.card__indicator-item--active {
 	background: var(--cobalt-color);
 }
 

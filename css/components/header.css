@@ -21,7 +21,7 @@
 	color: var(--cobalt-color);
 }
 
-.header__navigation-link_active {
+.header__navigation-link--active {
 	background: var(--cobalt-color);
 	color: var(--surface-color);
 }
@@ -42,22 +42,22 @@
 }
 
 .burger__icon,
-.close-icon {
+.burger__close-icon {
 	position: absolute;
 	top: 0;
 	left: 0;
 	transition: opacity 0.3s ease;
 }
 
-.close-icon {
+.burger__close-icon {
 	opacity: 0;
 }
 
-.burger_active .burger__icon {
+.burger--active .burger__icon {
 	opacity: 0;
 }
 
-.burger_active .close-icon {
+.burger--active .burger__close-icon {
 	opacity: 1;
 }
 
@@ -73,7 +73,7 @@
 		visibility 0.3s ease;
 }
 
-.burger__navigation_open {
+.burger__navigation--open {
 	max-height: 1000px;
 	opacity: 1;
 	visibility: visible;

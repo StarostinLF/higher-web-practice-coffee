@@ -53,6 +53,7 @@
 					aria-label="Открыть меню"
 					aria-expanded="false"
 					aria-controls="burger-menu"
+					type="button"
 					class="burger"
 				>
 					<svg
@@ -68,7 +69,7 @@
 						<path d="M8 32H36" stroke="var(--cobalt-color)" stroke-width="2" />
 					</svg>
 					<svg
-						class="close-icon"
+						class="burger__close-icon"
 						width="44"
 						height="44"
 						viewBox="0 0 44 44"
@@ -92,9 +93,10 @@
 				class="burger__navigation"
 				id="burger-menu"
 				aria-label="Мобильная навигация"
+				aria-hidden="true"
 			>
 				<hr class="burger__navigation-divider" />
-				<a href="/" class="burger__navigation-link">Главная</a>
+				<a href="./index.html" class="burger__navigation-link">Главная</a>
 				<hr class="burger__navigation-divider" />
 				<a href="./menu.html" class="burger__navigation-link">Меню</a>
 				<hr class="burger__navigation-divider" />
@@ -109,7 +111,7 @@
 				<div class="hero__container">
 					<h1 class="hero__title">Такт-кофе</h1>
 					<h2 class="hero__subtitle">Экстракция <br />под метроном.</h2>
-					<button class="button button_size_large hero__button">
+					<button class="button button--large hero__button" type="button">
 						Выбрать напиток
 					</button>
 				</div>
@@ -124,7 +126,7 @@
 								<img
 									src="./assets/why.png"
 									alt="Cпецификация cтабильности"
-									class="item__image item__image_reason_1"
+									class="item__image item__image--reason-1"
 								/>
 							</div>
 							<h3 class="item__title">
@@ -140,7 +142,7 @@
 								<img
 									src="./assets/why.png"
 									alt="Малые партии обжарки"
-									class="item__image item__image_reason_2"
+									class="item__image item__image--reason-2"
 								/>
 							</div>
 							<h3 class="item__title">Малые партии обжарки</h3>
@@ -156,7 +158,7 @@
 								<img
 									src="./assets/why.png"
 									alt="Темп обслуживания"
-									class="item__image item__image_reason_3"
+									class="item__image item__image--reason-3"
 								/>
 							</div>
 							<h3 class="item__title">Темп обслуживания</h3>
@@ -186,9 +188,9 @@
 								<h3 class="card__title">Капучино</h3>
 								<p class="card__text">S 200 мл · M 300 · L 400</p>
 							</div>
-							<ul class="card__labels">
-								<li class="card__labels-item tech-label">DOSE 18 g</li>
-								<li class="card__labels-item tech-label">YIELD 36 g</li>
+							<ul class="label__list">
+								<li class="label__list-item">DOSE 18 g</li>
+								<li class="label__list-item">YIELD 36 g</li>
 							</ul>
 						</article>
 					</li>
@@ -207,10 +209,10 @@
 								<h3 class="card__title">Флэт уайт</h3>
 								<p class="card__text">250 мл</p>
 							</div>
-							<ul class="card__labels">
-								<li class="card__labels-item tech-label">DOSE 18 g</li>
-								<li class="card__labels-item tech-label">YIELD 36 g</li>
-								<li class="card__labels-item tech-label">MICROFOAM</li>
+							<ul class="label__list">
+								<li class="label__list-item">DOSE 18 g</li>
+								<li class="label__list-item">YIELD 36 g</li>
+								<li class="label__list-item">MICROFOAM</li>
 							</ul>
 						</article>
 					</li>
@@ -229,10 +231,10 @@
 								<h3 class="card__title">Фильтр</h3>
 								<p class="card__text">300 мл</p>
 							</div>
-							<ul class="card__labels">
-								<li class="card__labels-item tech-label">RATIO 1:16</li>
-								<li class="card__labels-item tech-label">TEMP 92 °C</li>
-								<li class="card__labels-item tech-label">BREW 2:30</li>
+							<ul class="label__list">
+								<li class="label__list-item">RATIO 1:16</li>
+								<li class="label__list-item">TEMP 92 °C</li>
+								<li class="label__list-item">BREW 2:30</li>
 							</ul>
 						</article>
 					</li>
@@ -251,9 +253,9 @@
 								<h3 class="card__title">Американо</h3>
 								<p class="card__text">S 200 мл · M 300 · L 400</p>
 							</div>
-							<ul class="card__labels">
-								<li class="card__labels-item tech-label">ESP 18 g</li>
-								<li class="card__labels-item tech-label">WATER 180–320 ml</li>
+							<ul class="label__list">
+								<li class="label__list-item">ESP 18 g</li>
+								<li class="label__list-item">WATER 180–320 ml</li>
 							</ul>
 						</article>
 					</li>
@@ -273,17 +275,17 @@
 						любой шаг.Если вы любите вариативность — подберём режим под ваш
 						темп.
 					</p>
-					<ul class="about__list">
-						<li class="about__list-item tech-label">
+					<ul class="label__list">
+						<li class="label__list-item">
 							<span>SCA 82+</span>
 						</li>
-						<li class="about__list-item tech-label">
+						<li class="label__list-item">
 							<span>OPEN RECIPES</span>
 						</li>
-						<li class="about__list-item tech-label">
+						<li class="label__list-item">
 							<span>BREW LOG</span>
 						</li>
-						<li class="about__list-item tech-label">
+						<li class="label__list-item">
 							<span>SMALL BATCH</span>
 						</li>
 					</ul>
@@ -296,7 +298,12 @@
 				<h2 class="section__title">Ответы на вопросы</h2>
 				<ul class="faq__list">
 					<li class="faq__item">
-						<button class="faq__text faq__question">
+						<button
+							class="faq__text faq__question"
+							type="button"
+							aria-expanded="false"
+							aria-controls="faq-answer-1"
+						>
 							<span>Альтернативное молоко есть? </span>
 							<svg
 								class="faq__icon"
@@ -309,12 +316,21 @@
 								<use href="./assets/icons/arrow-icon.svg#arrow-icon" />
 							</svg>
 						</button>
-						<p class="faq__text faq__answer">
+						<p
+							class="faq__text faq__answer"
+							id="faq-answer-1"
+							aria-hidden="true"
+						>
 							Овсяное +30 ₽, кокос/миндаль +40 ₽.
 						</p>
 					</li>
 					<li class="faq__item">
-						<button class="faq__text faq__question">
+						<button
+							class="faq__text faq__question"
+							type="button"
+							aria-expanded="false"
+							aria-controls="faq-answer-2"
+						>
 							<span>Можно с собакой? </span>
 							<svg
 								class="faq__icon"
@@ -327,10 +343,21 @@
 								<use href="./assets/icons/arrow-icon.svg#arrow-icon" />
 							</svg>
 						</button>
-						<p class="faq__text faq__answer">Да, вода и миска у стойки.</p>
+						<p
+							class="faq__text faq__answer"
+							id="faq-answer-2"
+							aria-hidden="true"
+						>
+							Да, вода и миска у стойки.
+						</p>
 					</li>
 					<li class="faq__item">
-						<button class="faq__text faq__question">
+						<button
+							class="faq__text faq__question"
+							type="button"
+							aria-expanded="false"
+							aria-controls="faq-answer-3"
+						>
 							<span>Работа с ноутбуком? </span>
 							<svg
 								class="faq__icon"
@@ -343,12 +370,21 @@
 								<use href="./assets/icons/arrow-icon.svg#arrow-icon" />
 							</svg>
 						</button>
-						<p class="faq__text faq__answer">
+						<p
+							class="faq__text faq__answer"
+							id="faq-answer-3"
+							aria-hidden="true"
+						>
 							Да, розетки у стены, Wi-Fi открыт.
 						</p>
 					</li>
 					<li class="faq__item">
-						<button class="faq__text faq__question">
+						<button
+							class="faq__text faq__question"
+							type="button"
+							aria-expanded="false"
+							aria-controls="faq-answer-4"
+						>
 							<span>Громко ли у нас? </span>
 							<svg
 								class="faq__icon"
@@ -361,12 +397,21 @@
 								<use href="./assets/icons/arrow-icon.svg#arrow-icon" />
 							</svg>
 						</button>
-						<p class="faq__text faq__answer">
+						<p
+							class="faq__text faq__answer"
+							id="faq-answer-4"
+							aria-hidden="true"
+						>
 							С 8:00 до 11:00 тише, после — город в темпе.
 						</p>
 					</li>
 					<li class="faq__item">
-						<button class="faq__text faq__question">
+						<button
+							class="faq__text faq__question"
+							type="button"
+							aria-expanded="false"
+							aria-controls="faq-answer-5"
+						>
 							<span>Свой стакан? </span>
 							<svg
 								class="faq__icon"
@@ -379,10 +424,21 @@
 								<use href="./assets/icons/arrow-icon.svg#arrow-icon" />
 							</svg>
 						</button>
-						<p class="faq__text faq__answer">-10 ₽ и спасибо планете.</p>
+						<p
+							class="faq__text faq__answer"
+							id="faq-answer-5"
+							aria-hidden="true"
+						>
+							-10 ₽ и спасибо планете.
+						</p>
 					</li>
 					<li class="faq__item">
-						<button class="faq__text faq__question">
+						<button
+							class="faq__text faq__question"
+							type="button"
+							aria-expanded="false"
+							aria-controls="faq-answer-6"
+						>
 							<span>Оплата? </span>
 							<svg
 								class="faq__icon"
@@ -395,7 +451,13 @@
 								<use href="./assets/icons/arrow-icon.svg#arrow-icon" />
 							</svg>
 						</button>
-						<p class="faq__text faq__answer">Карта/QR/наличные.</p>
+						<p
+							class="faq__text faq__answer"
+							id="faq-answer-6"
+							aria-hidden="true"
+						>
+							Карта/QR/наличные.
+						</p>
 					</li>
 				</ul>
 			</section>

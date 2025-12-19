@@ -48,7 +48,7 @@
 					<a href="./menu.html" class="header__navigation-link">Меню</a>
 					<a
 						href="./promotions.html"
-						class="header__navigation-link header__navigation-link_active"
+						class="header__navigation-link header__navigation-link--active"
 						>Акции</a
 					>
 					<a href="./contacts.html" class="header__navigation-link">Контакты</a>
@@ -57,6 +57,7 @@
 					aria-label="Открыть меню"
 					aria-expanded="false"
 					aria-controls="burger-menu"
+					type="button"
 					class="burger"
 				>
 					<svg
@@ -72,7 +73,7 @@
 						<path d="M8 32H36" stroke="var(--cobalt-color)" stroke-width="2" />
 					</svg>
 					<svg
-						class="close-icon"
+						class="burger__close-icon"
 						width="44"
 						height="44"
 						viewBox="0 0 44 44"
@@ -96,9 +97,10 @@
 				class="burger__navigation"
 				id="burger-menu"
 				aria-label="Мобильная навигация"
+				aria-hidden="true"
 			>
 				<hr class="burger__navigation-divider" />
-				<a href="/" class="burger__navigation-link">Главная</a>
+				<a href="./index.html" class="burger__navigation-link">Главная</a>
 				<hr class="burger__navigation-divider" />
 				<a href="./menu.html" class="burger__navigation-link">Меню</a>
 				<hr class="burger__navigation-divider" />
@@ -112,7 +114,11 @@
 			<section class="section promotions">
 				<h1 class="section__title">Акции</h1>
 				<div class="promotions__carousel">
-					<button class="promotions__button prev" aria-label="Предыдущая акция">
+					<button
+						class="promotions__button promotions__button--prev"
+						aria-label="Предыдущая акция"
+						type="button"
+					>
 						<svg
 							class="promotions__icon"
 							width="24"
@@ -143,7 +149,9 @@
 										class="card__indicator-list"
 										aria-label="Индикатор слайдов"
 									>
-										<li class="card__indicator-item active"></li>
+										<li
+											class="card__indicator-item card__indicator-item--active"
+										></li>
 										<li class="card__indicator-item"></li>
 										<li class="card__indicator-item"></li>
 									</ul>
@@ -167,7 +175,9 @@
 										aria-label="Индикатор слайдов"
 									>
 										<li class="card__indicator-item"></li>
-										<li class="card__indicator-item active"></li>
+										<li
+											class="card__indicator-item card__indicator-item--active"
+										></li>
 										<li class="card__indicator-item"></li>
 									</ul>
 								</div>
@@ -191,13 +201,19 @@
 									>
 										<li class="card__indicator-item"></li>
 										<li class="card__indicator-item"></li>
-										<li class="card__indicator-item active"></li>
+										<li
+											class="card__indicator-item card__indicator-item--active"
+										></li>
 									</ul>
 								</div>
 							</article>
 						</li>
 					</ul>
-					<button class="promotions__button next" aria-label="Следующая акция">
+					<button
+						class="promotions__button promotions__button--next"
+						aria-label="Следующая акция"
+						type="button"
+					>
 						<svg
 							class="promotions__icon"
 							width="24"

@@ -14,7 +14,7 @@
 	transition: transform 0.3s ease;
 }
 
-.faq__icon_rotated {
+.faq__icon--rotated {
 	transform: rotate(90deg);
 }
 
@@ -23,13 +23,14 @@
 	padding: 0 16px;
 	max-height: 0;
 	height: 100%;
+	visibility: hidden;
 	transition: max-height 0.3s ease, visibility 0.3s ease, padding 0.3s ease,
 		margin-top 0.3s ease;
 	overflow: hidden;
 	outline: 1px solid color-mix(in srgb, var(--paper-color) 85%, black 15%);
 }
 
-.faq__answer_visibled {
+.faq__answer--visible {
 	margin-top: 1px;
 	padding: 16px;
 	max-height: 500px;

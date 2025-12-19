@@ -49,7 +49,7 @@
 					<a href="./promotions.html" class="header__navigation-link">Акции</a>
 					<a
 						href="./contacts.html"
-						class="header__navigation-link header__navigation-link_active"
+						class="header__navigation-link header__navigation-link--active"
 					>
 						Контакты
 					</a>
@@ -58,6 +58,7 @@
 					aria-label="Открыть меню"
 					aria-expanded="false"
 					aria-controls="burger-menu"
+					type="button"
 					class="burger"
 				>
 					<svg
@@ -73,7 +74,7 @@
 						<path d="M8 32H36" stroke="var(--cobalt-color)" stroke-width="2" />
 					</svg>
 					<svg
-						class="close-icon"
+						class="burger__close-icon"
 						width="44"
 						height="44"
 						viewBox="0 0 44 44"
@@ -97,9 +98,10 @@
 				class="burger__navigation"
 				id="burger-menu"
 				aria-label="Мобильная навигация"
+				aria-hidden="true"
 			>
 				<hr class="burger__navigation-divider" />
-				<a href="/" class="burger__navigation-link">Главная</a>
+				<a href="./index.html" class="burger__navigation-link">Главная</a>
 				<hr class="burger__navigation-divider" />
 				<a href="./menu.html" class="burger__navigation-link">Меню</a>
 				<hr class="burger__navigation-divider" />
@@ -116,7 +118,8 @@
 					<iframe
 						class="map"
 						src="https://yandex.ru/map-widget/v1/?um=constructor%3Af810b89c2a10922e5306b8acec32ea26d5e6a3f0d294d8301723cae83d4f1c39&amp;source=constructor"
-						frameborder="0"
+						title="Карта"
+						loading="lazy"
 					></iframe>
 					<address class="info">
 						<div class="info__container address">
@@ -147,7 +150,7 @@
 								href="https://yandex.ru/maps/-/CLwAYM0w"
 								target="_blank"
 								rel="noopener"
-								class="button button_type_secondary"
+								class="button button--secondary"
 							>
 								Открыть в картах
 							</a>
@@ -159,7 +162,12 @@
 				<h2 class="section__title">Ответы на вопросы</h2>
 				<ul class="faq__list">
 					<li class="faq__item">
-						<button class="faq__text faq__question">
+						<button
+							class="faq__text faq__question"
+							type="button"
+							aria-expanded="false"
+							aria-controls="faq-answer-1"
+						>
 							<span>Альтернативное молоко есть? </span>
 							<svg
 								class="faq__icon"
@@ -172,12 +180,21 @@
 								<use href="./assets/icons/arrow-icon.svg#arrow-icon" />
 							</svg>
 						</button>
-						<p class="faq__text faq__answer">
+						<p
+							class="faq__text faq__answer"
+							id="faq-answer-1"
+							aria-hidden="true"
+						>
 							Овсяное +30 ₽, кокос/миндаль +40 ₽.
 						</p>
 					</li>
 					<li class="faq__item">
-						<button class="faq__text faq__question">
+						<button
+							class="faq__text faq__question"
+							type="button"
+							aria-expanded="false"
+							aria-controls="faq-answer-2"
+						>
 							<span>Можно с собакой? </span>
 							<svg
 								class="faq__icon"
@@ -190,10 +207,21 @@
 								<use href="./assets/icons/arrow-icon.svg#arrow-icon" />
 							</svg>
 						</button>
-						<p class="faq__text faq__answer">Да, вода и миска у стойки.</p>
+						<p
+							class="faq__text faq__answer"
+							id="faq-answer-2"
+							aria-hidden="true"
+						>
+							Да, вода и миска у стойки.
+						</p>
 					</li>
 					<li class="faq__item">
-						<button class="faq__text faq__question">
+						<button
+							class="faq__text faq__question"
+							type="button"
+							aria-expanded="false"
+							aria-controls="faq-answer-3"
+						>
 							<span>Работа с ноутбуком? </span>
 							<svg
 								class="faq__icon"
@@ -206,12 +234,21 @@
 								<use href="./assets/icons/arrow-icon.svg#arrow-icon" />
 							</svg>
 						</button>
-						<p class="faq__text faq__answer">
+						<p
+							class="faq__text faq__answer"
+							id="faq-answer-3"
+							aria-hidden="true"
+						>
 							Да, розетки у стены, Wi-Fi открыт.
 						</p>
 					</li>
 					<li class="faq__item">
-						<button class="faq__text faq__question">
+						<button
+							class="faq__text faq__question"
+							type="button"
+							aria-expanded="false"
+							aria-controls="faq-answer-4"
+						>
 							<span>Громко ли у нас? </span>
 							<svg
 								class="faq__icon"
@@ -224,12 +261,21 @@
 								<use href="./assets/icons/arrow-icon.svg#arrow-icon" />
 							</svg>
 						</button>
-						<p class="faq__text faq__answer">
+						<p
+							class="faq__text faq__answer"
+							id="faq-answer-4"
+							aria-hidden="true"
+						>
 							С 8:00 до 11:00 тише, после — город в темпе.
 						</p>
 					</li>
 					<li class="faq__item">
-						<button class="faq__text faq__question">
+						<button
+							class="faq__text faq__question"
+							type="button"
+							aria-expanded="false"
+							aria-controls="faq-answer-5"
+						>
 							<span>Свой стакан? </span>
 							<svg
 								class="faq__icon"
@@ -242,10 +288,21 @@
 								<use href="./assets/icons/arrow-icon.svg#arrow-icon" />
 							</svg>
 						</button>
-						<p class="faq__text faq__answer">-10 ₽ и спасибо планете.</p>
+						<p
+							class="faq__text faq__answer"
+							id="faq-answer-5"
+							aria-hidden="true"
+						>
+							-10 ₽ и спасибо планете.
+						</p>
 					</li>
 					<li class="faq__item">
-						<button class="faq__text faq__question">
+						<button
+							class="faq__text faq__question"
+							type="button"
+							aria-expanded="false"
+							aria-controls="faq-answer-6"
+						>
 							<span>Оплата? </span>
 							<svg
 								class="faq__icon"
@@ -258,7 +315,13 @@
 								<use href="./assets/icons/arrow-icon.svg#arrow-icon" />
 							</svg>
 						</button>
-						<p class="faq__text faq__answer">Карта/QR/наличные.</p>
+						<p
+							class="faq__text faq__answer"
+							id="faq-answer-6"
+							aria-hidden="true"
+						>
+							Карта/QR/наличные.
+						</p>
 					</li>
 				</ul>
 			</section>

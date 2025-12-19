@@ -17,13 +17,6 @@
 	overflow: hidden;
 }
 
-.next {
+.promotions__button--next {
 	transform: rotate(180deg);
-}
-
-@media (min-width: 328px) and (max-width: 703px) {
-	.prev,
-	.next {
-		display: none;
-	}
 }

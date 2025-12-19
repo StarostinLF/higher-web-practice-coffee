@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 	const list = document.querySelector('.promotions__list');
 	const slides = Array.from(document.querySelectorAll('.promotions__item'));
-	const prevButton = document.querySelector('.promotions__button.prev');
-	const nextButton = document.querySelector('.promotions__button.next');
+	const prevButton = document.querySelector('.promotions__button--prev');
+	const nextButton = document.querySelector('.promotions__button--next');
 
 	if (!list || slides.length === 0 || !prevButton || !nextButton) return;
 
@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const normalizeIndex = (index) => {
 		const total = slides.length;
+
 		return ((index % total) + total) % total;
 	};
 
@@ -20,10 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			const indicators = Array.from(
 				slide.querySelectorAll('.card__indicator-item'),
 			);
+
 			if (indicators.length === 0) return;
 
 			indicators.forEach((dot, dotIndex) => {
-				dot.classList.toggle('active', dotIndex === activeIndex);
+				dot.classList.toggle(
+					'card__indicator-item--active',
+					dotIndex === activeIndex,
+				);
 			});
 		});
 	};
@@ -42,12 +47,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const stopAutoplay = () => {
 		if (autoplayId === null) return;
+
 		clearInterval(autoplayId);
 		autoplayId = null;
 	};
 
 	const startAutoplay = () => {
 		stopAutoplay();
+		
 		autoplayId = setInterval(() => {
 			showSlide(currentIndex + 1);
 		}, AUTOPLAY_MS);

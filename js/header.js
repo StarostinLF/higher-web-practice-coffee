@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			isExpanded ? 'Открыть меню' : 'Закрыть меню',
 		);
 
-		burger.classList.toggle('burger_active');
-		burgerNav.classList.toggle('burger__navigation_open');
+		burgerNav.setAttribute('aria-hidden', String(isExpanded));
+
+		burger.classList.toggle('burger--active');
+		burgerNav.classList.toggle('burger__navigation--open');
 	});
 });

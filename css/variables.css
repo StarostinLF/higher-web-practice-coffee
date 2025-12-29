@@ -6,7 +6,8 @@
 	--paper-color: #fff6e9;
 	--ink-color: #0b0b0b;
 
-	--display-font: 'Unbounded', sans-serif;
-	--ui-font: 'Manrope', sans-serif;
+	--display-font: 'Unbounded', 'IBM Plex Mono', Georgia, 'Times New Roman',
+		serif;
+	--ui-font: 'Manrope', 'IBM Plex Mono', 'Courier New', monospace;
 	--tech-label-font: 'IBM Plex Mono', monospace;
 }

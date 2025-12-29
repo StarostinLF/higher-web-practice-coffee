@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const burger = document.querySelector('.burger');
-	const burgerNav = document.querySelector('.burger__navigation');
+	const burgerNav = document.querySelector('.header__navigation');
 
 	if (!burger || !burgerNav) return;
 
@@ -16,6 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		burgerNav.setAttribute('aria-hidden', String(isExpanded));
 
 		burger.classList.toggle('burger--active');
-		burgerNav.classList.toggle('burger__navigation--open');
+		burgerNav.classList.toggle('header__navigation--open');
 	});
 });

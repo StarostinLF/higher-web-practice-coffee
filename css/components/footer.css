@@ -8,6 +8,13 @@
 .footer__navigation-link {
 	width: calc(100% / 3);
 	text-align: center;
+	transition: text-decoration 0.3s ease, text-underline-offset 0.3s ease;
+	text-underline-offset: 0;
+}
+
+.footer__navigation-link:hover {
+	text-decoration: underline;
+	text-underline-offset: 2px;
 }
 
 @media (min-width: 328px) and (max-width: 703px) {

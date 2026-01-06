@@ -9,9 +9,13 @@
 	justify-content: space-between;
 }
 
+.faq__question:hover .faq__icon {
+	scale: 1.3;
+}
+
 .faq__icon {
 	transform: rotate(-90deg);
-	transition: transform 0.3s ease;
+	transition: transform 0.3s ease, scale 0.3s ease;
 }
 
 .faq__icon--rotated {

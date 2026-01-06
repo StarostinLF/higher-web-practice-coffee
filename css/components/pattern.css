@@ -1,8 +1,8 @@
-.pattern-grid-8 {
+.pattern-grid {
 	position: relative;
 }
 
-.pattern-grid-8::after {
+.pattern-grid::after {
 	content: '';
 	position: absolute;
 	inset: 0;

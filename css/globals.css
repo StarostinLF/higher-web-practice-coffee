@@ -89,11 +89,11 @@ a {
 	gap: 24px;
 }
 
-.label__list {
+.labels {
 	display: flex;
 }
 
-.label__list-item {
+.labels__item {
 	background: var(--surface-color);
 	outline: 1px solid color-mix(in srgb, var(--paper-color) 85%, black 15%);
 	font-family: var(--tech-label-font);

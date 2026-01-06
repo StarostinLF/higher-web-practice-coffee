@@ -68,7 +68,7 @@
 	object-position: calc(50% + 145px) 50%;
 }
 
-.card__image-coffee-1 {
+.card__image-espresso {
 	scale: 1.5;
 	max-width: 218px;
 	width: 100%;
@@ -77,51 +77,51 @@
 	object-position: calc(50% + 5px) calc(50% - 10px);
 }
 
-.card__image-coffee-2 {
+.card__image-americano {
 	-o-object-position: calc(50% + 145px);
 	object-position: calc(50% + 145px);
 }
 
-.card__image-coffee-3 {
+.card__image-cappuccino {
 	-o-object-position: calc(50% + 18px);
 	object-position: calc(50% + 18px);
 }
 
-.card__image-coffee-4 {
+.card__image-flat-white {
 	scale: 1.9;
 	-o-object-position: calc(50% - 105px);
 	object-position: calc(50% - 105px);
 }
 
-.card__image-coffee-5 {
+.card__image-filter-coffee {
 	-o-object-position: calc(50% + 138px) calc(50% - 20px);
 	object-position: calc(50% + 138px) calc(50% - 20px);
 }
 
-.card__image-coffee-6 {
+.card__image-v60 {
 	-o-object-position: calc(50% + 10px) calc(50% - 20px);
 	object-position: calc(50% + 10px) calc(50% - 20px);
 }
 
-.card__image-coffee-7 {
+.card__image-espresso-tonic {
 	scale: 1.35;
 	-o-object-position: calc(50% - 115px);
 	object-position: calc(50% - 115px);
 }
 
-.card__image-coffee-8 {
+.card__image-raf-vanilla {
 	-o-object-position: calc(50% + 118px) calc(50% - 20px);
 	object-position: calc(50% + 118px) calc(50% - 20px);
 }
 
-.card__image-coffee-9 {
+.card__image-cold-brew-cherry {
 	scale: 1.35;
 	width: 120px;
 	-o-object-position: calc(50% + 10px);
 	object-position: calc(50% + 10px);
 }
 
-.card__image-coffee-10 {
+.card__image-matcha-latte {
 	-o-object-position: calc(50% - 110px) calc(50% - 20px);
 	object-position: calc(50% - 110px) calc(50% - 20px);
 }

@@ -56,24 +56,24 @@
                 </button>
             </div>
         </header>
-        <main class="main">
+        <main class="main menu">
             <h1 class="menu__title">Меню</h1>
-            <nav class="anchor__navigation" aria-label="Якорная навигация по меню">
-                <a href="#espresso-bar" class="anchor">Эспрессо-бар</a>
-                <a href="#filter" class="anchor">Фильтр</a>
-                <a href="#author" class="anchor">Авторские</a>
-                <a href="#cold" class="anchor">Холодные</a>
+            <nav class="anchors" aria-label="Якорная навигация по меню">
+                <a href="#espresso-bar" class="anchors__item">Эспрессо-бар</a>
+                <a href="#filter" class="anchors__item">Фильтр</a>
+                <a href="#author" class="anchors__item">Авторские</a>
+                <a href="#cold" class="anchors__item">Холодные</a>
             </nav>
             <section class="section coffee">
                 <h2 id="espresso-bar" class="coffee__title">Эспрессо-бар</h2>
                 <ul class="coffee__list">
                     <li class="coffee__item">
                         <article class="card">
-                            <div class="card__image-container pattern-grid-8">
+                            <div class="card__image-container pattern-grid">
                                 <img
                                     src="./assets/menu/espresso.png"
                                     alt="Эспрессо"
-                                    class="card__image card__image-coffee-1"
+                                    class="card__image card__image-espresso"
                                 />
                             </div>
                             <div class="card__description-container">
@@ -81,21 +81,21 @@
                                 <p class="card__text">Арабика 100%; 30 мл</p>
                             </div>
                             <p class="card__price">150 ₽</p>
-                            <ul class="label__list">
-                                <li class="label__list-item tech-label">FYIELD 36 g</li>
-                                <li class="label__list-item tech-label">RATIO 1:2</li>
-                                <li class="label__list-item tech-label">TEMP 93 °C</li>
+                            <ul class="labels">
+                                <li class="labels__item tech-label">FYIELD 36 g</li>
+                                <li class="labels__item tech-label">RATIO 1:2</li>
+                                <li class="labels__item tech-label">TEMP 93 °C</li>
                             </ul>
                         </article>
                     </li>
                     <li class="coffee__item">
                         <article class="card">
-                            <div class="card__image-container pattern-grid-8">
+                            <div class="card__image-container pattern-grid">
                                 <div class="card__image-wrapper">
                                     <img
                                         src="./assets/menu/coffee-set-1.png"
                                         alt="Американо"
-                                        class="card__image card__image-coffee-2"
+                                        class="card__image card__image-americano"
                                     />
                                 </div>
                             </div>
@@ -104,20 +104,20 @@
                                 <p class="card__text">S 200 мл · M 300 мл · L 400 мл</p>
                             </div>
                             <p class="card__price">S 230 ₽ · M 60 ₽ · L 90 ₽</p>
-                            <ul class="label__list">
-                                <li class="label__list-item tech-label">ESP 18 g</li>
-                                <li class="label__list-item tech-label">WATER 180–320 ml</li>
+                            <ul class="labels">
+                                <li class="labels__item tech-label">ESP 18 g</li>
+                                <li class="labels__item tech-label">WATER 180–320 ml</li>
                             </ul>
                         </article>
                     </li>
                     <li class="coffee__item">
                         <article class="card">
-                            <div class="card__image-container pattern-grid-8">
+                            <div class="card__image-container pattern-grid">
                                 <div class="card__image-wrapper">
                                     <img
                                         src="./assets/menu/coffee-set-1.png"
                                         alt="Капучино"
-                                        class="card__image card__image-coffee-3"
+                                        class="card__image card__image-cappuccino"
                                     />
                                 </div>
                             </div>
@@ -126,20 +126,20 @@
                                 <p class="card__text">S 200 мл · M 300 мл · L 400 мл</p>
                             </div>
                             <p class="card__price">S 230 ₽ · M 260 ₽ · L 290 ₽</p>
-                            <ul class="label__list">
-                                <li class="label__list-item tech-label">DOSE 18 g</li>
-                                <li class="label__list-item tech-label">YIELD 36 g</li>
+                            <ul class="labels">
+                                <li class="labels__item tech-label">DOSE 18 g</li>
+                                <li class="labels__item tech-label">YIELD 36 g</li>
                             </ul>
                         </article>
                     </li>
                     <li class="coffee__item">
                         <article class="card">
-                            <div class="card__image-container pattern-grid-8">
+                            <div class="card__image-container pattern-grid">
                                 <div class="card__image-wrapper">
                                     <img
                                         src="./assets/menu/coffee-set-1.png"
                                         alt="Флэт уайт"
-                                        class="card__image card__image-coffee-4"
+                                        class="card__image card__image-flat-white"
                                     />
                                 </div>
                             </div>
@@ -148,10 +148,10 @@
                                 <p class="card__text">250 мл</p>
                             </div>
                             <p class="card__price">250 ₽</p>
-                            <ul class="label__list">
-                                <li class="label__list-item tech-label">DOSE 18g</li>
-                                <li class="label__list-item tech-label">YIELD 36g</li>
-                                <li class="label__list-item tech-label">MICROFOAM</li>
+                            <ul class="labels">
+                                <li class="labels__item tech-label">DOSE 18g</li>
+                                <li class="labels__item tech-label">YIELD 36g</li>
+                                <li class="labels__item tech-label">MICROFOAM</li>
                             </ul>
                         </article>
                     </li>
@@ -162,12 +162,12 @@
                 <ul class="coffee__list">
                     <li class="coffee__item">
                         <article class="card">
-                            <div class="card__image-container pattern-grid-8">
+                            <div class="card__image-container pattern-grid">
                                 <div class="card__image-wrapper">
                                     <img
                                         src="./assets/menu/coffee-set-2.png"
                                         alt="Фильтр-кофе"
-                                        class="card__image card__image-coffee-5"
+                                        class="card__image card__image-filter-coffee"
                                     />
                                 </div>
                             </div>
@@ -176,21 +176,21 @@
                                 <p class="card__text">300 мл</p>
                             </div>
                             <p class="card__price">220 ₽</p>
-                            <ul class="label__list">
-                                <li class="label__list-item tech-label">RATIO 1:16</li>
-                                <li class="label__list-item tech-label">TEMP 92 °C</li>
-                                <li class="label__list-item tech-label">BREW 2:30</li>
+                            <ul class="labels">
+                                <li class="labels__item tech-label">RATIO 1:16</li>
+                                <li class="labels__item tech-label">TEMP 92 °C</li>
+                                <li class="labels__item tech-label">BREW 2:30</li>
                             </ul>
                         </article>
                     </li>
                     <li class="coffee__item">
                         <article class="card">
-                            <div class="card__image-container pattern-grid-8">
+                            <div class="card__image-container pattern-grid">
                                 <div class="card__image-wrapper">
                                     <img
                                         src="./assets/menu/coffee-set-2.png"
                                         alt="V60"
-                                        class="card__image card__image-coffee-6"
+                                        class="card__image card__image-v60"
                                     />
                                 </div>
                             </div>
@@ -199,10 +199,10 @@
                                 <p class="card__text">300 мл</p>
                             </div>
                             <p class="card__price">260 ₽</p>
-                            <ul class="label__list">
-                                <li class="label__list-item tech-label">DOSE 18 g</li>
-                                <li class="label__list-item tech-label">POUR 3</li>
-                                <li class="label__list-item tech-label">BLOOM 30 s</li>
+                            <ul class="labels">
+                                <li class="labels__item tech-label">DOSE 18 g</li>
+                                <li class="labels__item tech-label">POUR 3</li>
+                                <li class="labels__item tech-label">BLOOM 30 s</li>
                             </ul>
                         </article>
                     </li>
@@ -213,12 +213,12 @@
                 <ul class="coffee__list">
                     <li class="coffee__item">
                         <article class="card">
-                            <div class="card__image-container pattern-grid-8">
+                            <div class="card__image-container pattern-grid">
                                 <div class="card__image-wrapper">
                                     <img
                                         src="./assets/menu/coffee-set-2.png"
                                         alt="Эспрессо-тоник"
-                                        class="card__image card__image-coffee-7"
+                                        class="card__image card__image-espresso-tonic"
                                     />
                                 </div>
                             </div>
@@ -227,21 +227,21 @@
                                 <p class="card__text">300 мл</p>
                             </div>
                             <p class="card__price">290 ₽</p>
-                            <ul class="label__list">
-                                <li class="label__list-item tech-label">FYIELD 36 g</li>
-                                <li class="label__list-item tech-label">RATIO 1:2</li>
-                                <li class="label__list-item tech-label">TEMP 93 °C</li>
+                            <ul class="labels">
+                                <li class="labels__item tech-label">FYIELD 36 g</li>
+                                <li class="labels__item tech-label">RATIO 1:2</li>
+                                <li class="labels__item tech-label">TEMP 93 °C</li>
                             </ul>
                         </article>
                     </li>
                     <li class="coffee__item">
                         <article class="card">
-                            <div class="card__image-container pattern-grid-8">
+                            <div class="card__image-container pattern-grid">
                                 <div class="card__image-wrapper">
                                     <img
                                         src="./assets/menu/coffee-set-3.png"
                                         alt="Раф ваниль"
-                                        class="card__image card__image-coffee-8"
+                                        class="card__image card__image-raf-vanilla"
                                     />
                                 </div>
                             </div>
@@ -250,10 +250,10 @@
                                 <p class="card__text">300 мл</p>
                             </div>
                             <p class="card__price">320 ₽</p>
-                            <ul class="label__list">
-                                <li class="label__list-item tech-label">ESP 18 g</li>
-                                <li class="label__list-item tech-label">MILK 200 ml</li>
-                                <li class="label__list-item tech-label">SYRUP 10 ml</li>
+                            <ul class="labels">
+                                <li class="labels__item tech-label">ESP 18 g</li>
+                                <li class="labels__item tech-label">MILK 200 ml</li>
+                                <li class="labels__item tech-label">SYRUP 10 ml</li>
                             </ul>
                         </article>
                     </li>
@@ -264,12 +264,12 @@
                 <ul class="coffee__list">
                     <li class="coffee__item">
                         <article class="card">
-                            <div class="card__image-container pattern-grid-8">
+                            <div class="card__image-container pattern-grid">
                                 <div class="card__image-wrapper">
                                     <img
                                         src="./assets/menu/coffee-set-3.png"
                                         alt="Колдбрю «Вишня»"
-                                        class="card__image card__image-coffee-9"
+                                        class="card__image card__image-cold-brew-cherry"
                                     />
                                 </div>
                             </div>
@@ -278,21 +278,21 @@
                                 <p class="card__text">250 мл</p>
                             </div>
                             <p class="card__price">330 ₽</p>
-                            <ul class="label__list">
-                                <li class="label__list-item tech-label">FYIELD 36 g</li>
-                                <li class="label__list-item tech-label">RATIO 1:2</li>
-                                <li class="label__list-item tech-label">TEMP 93 °C</li>
+                            <ul class="labels">
+                                <li class="labels__item tech-label">FYIELD 36 g</li>
+                                <li class="labels__item tech-label">RATIO 1:2</li>
+                                <li class="labels__item tech-label">TEMP 93 °C</li>
                             </ul>
                         </article>
                     </li>
                     <li class="coffee__item">
                         <article class="card">
-                            <div class="card__image-container pattern-grid-8">
+                            <div class="card__image-container pattern-grid">
                                 <div class="card__image-wrapper">
                                     <img
                                         src="./assets/menu/coffee-set-3.png"
                                         alt="Матча латте"
-                                        class="card__image card__image-coffee-10"
+                                        class="card__image card__image-matcha-latte"
                                     />
                                 </div>
                             </div>
@@ -301,9 +301,9 @@
                                 <p class="card__text">300 мл</p>
                             </div>
                             <p class="card__price">310 ₽</p>
-                            <ul class="label__list">
-                                <li class="label__list-item tech-label">MATCHA 2 g</li>
-                                <li class="label__list-item tech-label">MILK 200 ml</li>
+                            <ul class="labels">
+                                <li class="labels__item tech-label">MATCHA 2 g</li>
+                                <li class="labels__item tech-label">MILK 200 ml</li>
                             </ul>
                         </article>
                     </li>
@@ -312,7 +312,7 @@
         </main>
         <footer class="footer">
             <nav class="footer__navigation" aria-label="Навигация в подвале">
-                <a href="#" class="footer__navigation-link">Адсера/часы</a>
+                <a href="#" class="footer__navigation-link">Адреса/часы</a>
                 <a href="#" class="footer__navigation-link">Быстрые ссылки</a>
                 <a href="#" class="footer__navigation-link">Копирайт</a>
             </nav>

@@ -12,6 +12,14 @@
 	position: relative;
 }
 
+.header__logo-link {
+	transition: scale 0.3s ease;
+}
+
+.header__logo-link:hover {
+	scale: 1.3;
+}
+
 .header__navigation {
 	display: flex;
 }

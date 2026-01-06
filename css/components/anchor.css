@@ -1,4 +1,4 @@
-.anchor__navigation {
+.anchors {
 	display: flex;
 	flex-wrap: wrap;
 	-moz-column-gap: 32px;
@@ -6,19 +6,22 @@
 	border-bottom: 1px solid color-mix(in srgb, var(--paper-color) 85%, black 15%);
 }
 
-.anchor {
+.anchors__item {
 	font-family: var(--tech-label-font);
 	transition: color 0.3s ease;
 	padding: 20px 0;
+	text-underline-offset: 0;
+	transition: text-decoration 0.3s ease, text-underline-offset 0.3s ease;
 }
 
-.anchor:hover {
+.anchors__item:hover {
 	text-decoration: underline;
 	color: var(--cobalt-color);
+	text-underline-offset: 2px;
 }
 
 @media (min-width: 328px) and (max-width: 703px) {
-	.anchor {
+	.anchors__item {
 		padding: 10px 0;
 	}
 }
